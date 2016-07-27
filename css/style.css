@@ -1,0 +1,47 @@
+div[class^="box"] {
+  height: 80px;
+  width: 80px;
+  line-height: 80px;
+  position: absolute;
+  text-align: center;
+  color: white;
+  border: solid 2px black; }
+
+.box-1 {
+  background: #001188;
+  left: 20px;
+  top: 346px; }
+
+.box-2 {
+  background: #0f2097;
+  left: 60px;
+  top: 298px;
+  z-index: 2; }
+
+.box-3 {
+  background: #1e2fa6;
+  left: 100px;
+  top: 250px;
+  z-index: 1; }
+
+.box-4 {
+  background: #2d3eb5;
+  left: 140px;
+  top: 202px; }
+
+.box-5 {
+  background: #3c4dc4;
+  left: 180px;
+  top: 154px;
+  z-index: 1; }
+
+.box-6 {
+  background: #4b5cd3;
+  left: 220px;
+  top: 106px;
+  z-index: 2; }
+
+.box-7 {
+  background: #5a6be2;
+  left: 260px;
+  top: 58px; }

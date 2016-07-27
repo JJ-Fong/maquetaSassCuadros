@@ -1,0 +1,30 @@
+$primary-color: #018;
+$box-size: 80px; 
+$left-step: $box-size/2; 
+$top-step: $box-size*0.6;
+$initial-top-value: $box-size*0.6*7+10;
+
+div[class^="box"]{
+	height: $box-size;; 
+	width:$box-size;
+	line-height: $box-size;
+	position: absolute;
+	text-align: center;
+	color: white;
+	border: solid 2px black;
+}
+
+@for $i from 0 through 6 {
+	.box-#{$i+1 }{
+		background: $primary-color+$i*15;
+		left: 20px + $i * $left-step;
+		top: $initial-top-value - $i * $top-step; 
+
+		@if $i == 1 { z-index: 2};
+		@if $i == 2 { z-index: 1};
+		@if $i == 4 { z-index: 1};
+		@if $i == 5 { z-index: 2};
+
+
+	}
+}
